@@ -1,0 +1,2 @@
+Right now all it does is populate a list of 100 xbee buttons into a scrollview.
+When you hit add it just plays music and stops when you hit remove. Read does nothing for now. Just testing if they work.
