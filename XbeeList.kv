@@ -1,0 +1,32 @@
+<XbeeGridLayout>:
+    id: me
+    layout_content: grids
+
+    BoxLayout:
+        orientation: "vertical"
+        cols: 1
+
+        ScrollView:
+            size: self.size
+            GridLayout:
+                id: grids
+                padding: 10
+                spacing: 20
+                size_hint_y: None
+                cols: 2
+                row_default_height: 40  
+                run: me.populate(grids)
+
+        GridLayout:
+            id: buttons
+            size_hint: 1, .1
+            cols: 3
+            Button:
+                text: 'Add'
+                on_press: me.add_btn_pressed()
+            Button:
+                text: 'Remove'
+                on_press: me.rmv_btn_pressed()
+            Button:
+                text: 'Read'
+                on_press: me.read_btn_pressed()
